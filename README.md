@@ -37,18 +37,31 @@ All request can be accessed in [directory](./requests) which can be used in [Bru
 ## API Endpoints
 ### Producers
 [**POST**] http://localhost:8080/producer - Creates producer.
+
 [**GET**] http://localhost:8080/producers - Returns all producers in database.
+
 [**GET**] http://localhost:8080/producers/ID - Returns one producer with provided **ID**.
+
 [**DELETE**] http://localhost:8080/producers/ID - Deletes producer with provided **ID** and related products and attributes.
 ### Products
-[**GET**] http://localhost:8080/products - Returns all items from database, has option to filter results by **name, producerId, minPrice and maxPrice**.
+[**GET**] http://localhost:8080/products - Returns all items from database, has option to filter results by 
+**name, producerId, minPrice and maxPrice**.
+
 [**GET**] http://localhost:8080/product/ID - Returns one product by provided **ID**
+
 [**POST**] http://localhost:8080/product - Creates Product and assigns it to the existing Producer.
+
 [**PUT**] http://localhost:8080/product - Updates field of items, such as name, description and price, attributes are managed in [Attributes](#Attributes) section
+
 [**DELETE**] http://localhost:8080/product - Deletes product by Id and it's related attributes
+
 ### Attributes
+
 [**GET**] http://localhost:8080/attributes/ID - Returns one attribute by provided **ID**
+
 [**GET**] http://localhost:8080/attributes - Returns all attributes from database.
+
 [**POST**] http://localhost:8080/attribute - Creates Atribute and assigns it to the existing Product.
+
 [**PUT**] http://localhost:8080/attribute - Updates the Attribute name and it's value, needs to provided it's **id** and **productId**
 
