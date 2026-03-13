@@ -1,0 +1,24 @@
+info:
+  name: Update Product
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: http://localhost:8080/product
+  body:
+    type: json
+    data: |-
+      {
+        "id":1,
+        "name":"Samsung S23",
+        "description":"A new good phone",
+        "price":333.23
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

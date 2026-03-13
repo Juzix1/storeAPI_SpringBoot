@@ -1,0 +1,24 @@
+info:
+  name: Add product
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:8080/product
+  body:
+    type: json
+    data: |-
+      {
+        "name":"Samsung Galaxy TAB 13",
+        "description":"high-end phone",
+        "price":499.99,
+        "producerId":1
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

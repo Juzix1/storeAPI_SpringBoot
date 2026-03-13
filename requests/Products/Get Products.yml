@@ -1,0 +1,33 @@
+info:
+  name: Get Products
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: http://localhost:8080/products
+  params:
+    - name: name
+      value: TAB
+      type: query
+      disabled: true
+    - name: producerId
+      value: "1"
+      type: query
+      disabled: true
+    - name: minPrice
+      value: "134"
+      type: query
+      disabled: true
+    - name: maxPrice
+      value: "3000.00"
+      type: query
+      disabled: true
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: This request retrieves a list of users from the JSONPlaceholder API.
